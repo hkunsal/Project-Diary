@@ -12,7 +12,7 @@
 _Include the name of the method, its parameters, return value, and side effects._
 
 ```ruby
-# 
+#reading_time calculates the reading time of a given text.
 seconds = reading_time(text)
 
 text: a string (e.g. "hello WORLD")
