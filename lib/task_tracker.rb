@@ -1,10 +1,21 @@
 class TaskTracker
-  def initialize(list)
+  def initialize
     @list = []
   end
 
   def add(todo)
     @list << todo
-    return @list
   end
+
+  def complete(todo)
+    if @list.include?(todo)
+      @list.delete(todo)
+    else
+      fail "No such todo."
+    end
+  end
+
+  def list
+    return @list
+  end  
 end
